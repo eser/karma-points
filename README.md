@@ -1,43 +1,41 @@
 # Karma Points Developer Document
 
 <p align="center">
-  <img src="https://acikyazilimagi.com/assets/logo.svg" alt="Karma-Points Logo" width="100" height="100">
-  
-  <p align="center"><a href="https://x.com/eser">
-  <a href="https://discord.com/invite/ckS4huSvEk">
-    <img src="https://img.shields.io/badge/Join%20us%20on%20Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Join us on Discord">
-  </a>
-  <a href="https://x.com/eserozvataf">
-    <img src="https://img.shields.io/badge/@eserozvataf-000000?style=for-the-badge&logo=x&logoColor=white" alt="X Logo">
-  </a>
-  <a href="https://x.com/sameterkanboz">
-    <img src="https://img.shields.io/badge/@sameterkanboz-000000?style=for-the-badge&logo=x&logoColor=white" alt="X Logo">
-  </a>
-  
+  <img src="https://acikyazilimagi.com/assets/logo.svg" alt="Karma-Points Logo" width="100" height="100" />
+
+  <p align="center">
+    <a href="https://discord.com/invite/ckS4huSvEk">
+      <img src="https://img.shields.io/badge/Join%20us%20on%20Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Join us on Discord" />
+    </a>
+    <a href="https://x.com/eserozvataf">
+      <img src="https://img.shields.io/badge/@eserozvataf-000000?style=for-the-badge&logo=x&logoColor=white" alt="X Logo" />
+    </a>
+    <a href="https://x.com/sameterkanboz">
+      <img src="https://img.shields.io/badge/@sameterkanboz-000000?style=for-the-badge&logo=x&logoColor=white" alt="X Logo" />
+    </a>
   </p>
-  
-  
 </p>
 
 ---
 
-- [Beginner's Guide 🏁](#begginers-guide)
-  - [Introduction](#introduction)
-  - [Installation Instructions](#installation-instructions)
-  - [Getting Started](#getting-started)
-- [Features and Usage ⚙️](#features-and-usage)
-  - [Key Features](#key-features)
-  - [Step-by-Step Usage](#step-by-step-usage)
-  - [Commands and Params](#commands-and-params)
-- [Contribution Guide 🤝](#contribution-guide)
-  - [Contribution Process](#contribution-process)
-  - [Coding Standards](#coding-standards)
-  - [Tests and Verifications](#tests-and-verifications)
-- [FAQ 🔍](#faq)
-  - [Common Questions and Issues](#common-questions-and-issues)
-  - [Troubleshooting](#troubleshooting)
+- [Karma Points Developer Document](#karma-points-developer-document)
+  - [Beginner's Guide](#beginners-guide)
+    - [Introduction](#introduction)
+    - [Installation Instructions](#installation-instructions)
+    - [Getting Started](#getting-started)
+  - [Features and Usage](#features-and-usage)
+    - [Key Features](#key-features)
+    - [step-by-step usage](#step-by-step-usage)
+    - [Commands and Params](#commands-and-params)
+  - [Contribution Guide](#contribution-guide)
+    - [Contribution Process](#contribution-process)
+    - [Coding Standards](#coding-standards)
+    - [Tests and Verifications](#tests-and-verifications)
+  - [FAQ](#faq)
+    - [Common Questions and Issues](#common-questions-and-issues)
+    - [Troubleshooting](#troubleshooting)
 
-## Begginer's Guide
+## Beginner's Guide
 
 ### Introduction
 
@@ -63,8 +61,8 @@
 - **Clone aşamaları:**
 
   ```bash
-  npm install
-  npm run dev
+  corepack up
+  node --run dev
   ```
 
 ### Getting Started
@@ -75,7 +73,7 @@
 DB_HOST=localhost
 DB_USER=root
 DB_PASS=password
-  ```
+```
 
 ## Features and Usage
 
@@ -114,10 +112,15 @@ Katkıda bulunmak isteyenler için adım adım talimatlar:
 
 3. **Değişiklikleri Yapma:**
    - Kendi branch'inizde gerekli değişiklikleri yapın.
+
+     ```bash
+     git checkout -B feat/yeni-ozellik
+     ```
+
    - Değişikliklerinizi commit edin:
 
      ```bash
-     git add .
+     git add -A
      git commit -m 'Yeni özellik ekle'
      ```
 
@@ -125,7 +128,7 @@ Katkıda bulunmak isteyenler için adım adım talimatlar:
    - Değişikliklerinizi uzak depoya gönderin:
 
      ```bash
-     git push origin yeni-ozellik
+     git push -u origin feat/yeni-ozellik
      ```
 
 5. **Pull Request Açma:**
@@ -163,7 +166,7 @@ Testlerin nasıl yazılacağı ve doğrulama süreçleri:
   - Testleri çalıştırmak için proje kök dizininde aşağıdaki komutu kullanın:
 
     ```bash
-    npm test
+    node --test
     ```
 
 - **Doğrulama ve İnceleme:**
