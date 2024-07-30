@@ -1,5 +1,26 @@
 # Karma Points Developer Document
 
+<p align="center">
+  <img src="https://acikyazilimagi.com/assets/logo.svg" alt="Karma-Points Logo" width="100" height="100">
+  
+  <p align="center"><a href="https://x.com/eser">
+  <a href="https://discord.com/invite/ckS4huSvEk">
+    <img src="https://img.shields.io/badge/Join%20us%20on%20Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Join us on Discord">
+  </a>
+  <a href="https://x.com/eserozvataf">
+    <img src="https://img.shields.io/badge/@eserozvataf-000000?style=for-the-badge&logo=x&logoColor=white" alt="X Logo">
+  </a>
+  <a href="https://x.com/sameterkanboz">
+    <img src="https://img.shields.io/badge/@sameterkanboz-000000?style=for-the-badge&logo=x&logoColor=white" alt="X Logo">
+  </a>
+  
+  </p>
+  
+  
+</p>
+
+---
+
 - [Beginner's Guide 🏁](#begginers-guide)
   - [Introduction](#introduction)
   - [Installation Instructions](#installation-instructions)
