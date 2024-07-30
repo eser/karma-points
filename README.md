@@ -1,6 +1,22 @@
-# karma-points DevDoc
+# Karma Points Developer Document
 
-## Begginer's Guide 🏁
+- [Beginner's Guide 🏁](#begginers-guide)
+  - [Introduction](#introduction)
+  - [Installation Instructions](#installation-instructions)
+  - [Getting Started](#getting-started)
+- [Features and Usage ⚙️](#features-and-usage)
+  - [Key Features](#key-features)
+  - [Step-by-Step Usage](#step-by-step-usage)
+  - [Commands and Params](#commands-and-params)
+- [Contribution Guide 🤝](#contribution-guide)
+  - [Contribution Process](#contribution-process)
+  - [Coding Standards](#coding-standards)
+  - [Tests and Verifications](#tests-and-verifications)
+- [FAQ 🔍](#faq)
+  - [Common Questions and Issues](#common-questions-and-issues)
+  - [Troubleshooting](#troubleshooting)
+
+## Begginer's Guide
 
 ### Introduction
 
@@ -40,7 +56,7 @@ DB_USER=root
 DB_PASS=password
   ```
 
-## Features and Usage 🗝️
+## Features and Usage
 
 ### Key Features
 
@@ -56,7 +72,7 @@ nasıl kullanılacağına dair detaylı açıklamalar ve usa cases
 
 eğer cli ise komut ve parametre açıklamaları
 
-## Contribution Guide 🤝
+## Contribution Guide
 
 ### Contribution Process
 
@@ -134,7 +150,7 @@ Testlerin nasıl yazılacağı ve doğrulama süreçleri:
   - Kodunuzun gözden geçirilmesi için pull request açın ve diğer geliştiricilerin incelemesine sunun.
   - Gözden geçirme sırasında yapılan geri bildirimleri dikkate alarak gerekli düzeltmeleri yapın.
 
-## FAQ 🔍
+## FAQ
 
 ### Common Questions and Issues
 
