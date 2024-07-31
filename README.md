@@ -34,6 +34,7 @@
   - [FAQ](#faq)
     - [Common Questions and Issues](#common-questions-and-issues)
     - [Troubleshooting](#troubleshooting)
+    - [License](#license)
 
 ## Beginner's Guide
 
@@ -48,8 +49,9 @@
 ### Installation Instructions
 
 - **Gerekli Ön Koşullar:**
-  - Node.js (versiyon X.X.X ve üzeri)
-  - Git
+  - [Git](https://git-scm.com/) v2.46+
+  - [Node.js](https://nodejs.org/) v22.0+
+  - [pre-commit](https://pre-commit.com/) v3.6+
 
 - **Clone Aşamaları:**
 
@@ -102,36 +104,45 @@ Katkıda bulunmak isteyenler için adım adım talimatlar:
    - Karma-Points projesinin GitHub sayfasına gidin.
    - Sağ üst köşedeki "Fork" butonuna tıklayarak projeyi kendi hesabınıza fork'layın.
 
-2. **Yeni Bir Branch Oluşturma:**
-
-   - Yeni bir branch oluşturun ve bu branch'e geçin:
+2. **Bilgisayarınızda Çalışma Ortamı Oluşturma:**
+   - Forkladığınız projeyi `git` aracıyla kendi bilgisayarınıza indirin.
 
      ```bash
-     git checkout -b yeni-ozellik
+     git clone git@github.com:kullanici/karma-points.git
+     cd karma-points
      ```
 
-3. **Değişiklikleri Yapma:**
-   - Kendi branch'inizde gerekli değişiklikleri yapın.
+   - Proje içerisinde [pre-commit](https://pre-commit.com/)'i aktif hale getirin.
+
+     ```bash
+     pre-commit install
+     ```
+
+3. **Yeni Bir Branch Oluşturma:**
+   - Yeni bir branch oluşturun ve bu branch'e geçin:
 
      ```bash
      git checkout -B feat/yeni-ozellik
      ```
 
+4. **Değişiklikleri Yapma:**
+   - Kendi branch'inizde gerekli değişiklikleri yapın.
+
    - Değişikliklerinizi commit edin:
 
      ```bash
      git add -A
-     git commit -m 'Yeni özellik ekle'
+     git commit -m 'feat: Yeni özellik eklendi.'
      ```
 
-4. **Branch'i Push'lama:**
+5. **Branch'i Push'lama:**
    - Değişikliklerinizi uzak depoya gönderin:
 
      ```bash
      git push -u origin feat/yeni-ozellik
      ```
 
-5. **Pull Request Açma:**
+6. **Pull Request Açma:**
    - GitHub sayfanıza gidin ve fork'ladığınız repository'yi açın.
    - "New Pull Request" butonuna tıklayarak yeni bir pull request oluşturun.
    - Yapılan değişikliklerin detaylarını açıklayan bir açıklama yazın ve pull request'i gönderin.
@@ -183,3 +194,7 @@ Testlerin nasıl yazılacağı ve doğrulama süreçleri:
 ### Troubleshooting
 
 - Hata ayıklama ve sorun giderme ipuçları.
+
+### License
+
+- Apache 2.0, [LICENSE](LICENSE) dosyasına göz gezdirebilirsiniz.
