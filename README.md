@@ -74,7 +74,7 @@
   
   ```bash
   cd backend
-  go run ./cmd/karmapoints/main.go
+  air
   ```
 
 ## Features and Usage
