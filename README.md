@@ -52,6 +52,7 @@
   - [Git](https://git-scm.com/) v2.46+
   - [Node.js](https://nodejs.org/) v22.0+
   - [pre-commit](https://pre-commit.com/) v3.6+
+  - [GoLang](https://go.dev/doc/install) v1.22.5+
 
 - **Clone Aşamaları:**
 
@@ -69,13 +70,12 @@
 
 ### Getting Started
 
-örnek yapılandırma .env dosyaları
-
-```bash
-DB_HOST=localhost
-DB_USER=root
-DB_PASS=password
-```
+- Backend
+  
+  ```bash
+  cd backend
+  go run ./cmd/karmapoints/main.go
+  ```
 
 ## Features and Usage
 
@@ -108,7 +108,7 @@ Katkıda bulunmak isteyenler için adım adım talimatlar:
    - Forkladığınız projeyi `git` aracıyla kendi bilgisayarınıza indirin.
 
      ```bash
-     git clone git@github.com:kullanici/karma-points.git
+     git clone git@github.com:eser/karma-points.git
      cd karma-points
      ```
 
