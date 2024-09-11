@@ -25,30 +25,60 @@ repos:
         args: ["--autofix", "--no-ensure-ascii", "--no-sort-keys"]
       - id: trailing-whitespace
   - repo: https://github.com/crate-ci/typos
-    rev: v1.23.5
+    rev: v1.23.6
     hooks:
       - id: typos
         verbose: true
         args:
           - "--config"
           - ".github/typos.toml"
+        exclude: |
+          (?x)^(
+            go.mod
+          )$
   - repo: https://github.com/compilerla/conventional-pre-commit
-    rev: v3.3.0
+    rev: v3.4.0
     hooks:
       - id: conventional-pre-commit
         stages: [commit-msg]
         args: []
+  - repo: https://github.com/golangci/golangci-lint
+    rev: v1.60.1
+    hooks:
+      - id: golangci-lint
   - repo: local
     hooks:
+      - id: govulncheck
+        name: govulncheck
+        entry: govulncheck ./...
+        language: golang
+        pass_filenames: false
+        types:
+        - go
       - id: kebab-case-files-only
         name: kebab-case files only
         entry: filenames must be kebab-case only
         language: fail
-        files: '[^a-z0-9.\/\[\]@-]'
+        files: '(?!\_test\.go$)[^a-z0-9.\/\[\]@-]'
         exclude: |
           (?x)^(
             .github/.*|
-            .git/COMMIT_EDITMSG|
+            Dockerfile|
             LICENSE|
-            README.md
+            Makefile|
+            README.md|
+            pkg/bliss/configfx/README.md|
+            pkg/bliss/datafx/README.md|
+            pkg/bliss/httpfx/README.md|
+            pkg/bliss/lib/README.md|
+            pkg/bliss/logfx/README.md|
+            pkg/bliss/results/README.md|
+            pkg/bliss/README.md|
           )$
+      - id: run-tests
+        name: run tests
+        description: Run tests using Go's built-in test runner.
+        entry: make test-ci
+        types_or: [go, json]
+        pass_filenames: false
+        language: system

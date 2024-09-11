@@ -1,0 +1,92 @@
+run:
+  concurrency: 4
+  timeout: 1m
+
+output:
+  formats:
+    - format: colored-line-number
+  sort-results: true
+
+linters:
+  enable-all: true
+  disable:
+    - godox
+    - gomnd
+    - stylecheck
+    - varnamelen
+    - execinquery
+
+linters-settings:
+  depguard:
+    rules:
+      main:
+        deny:
+          - pkg: io/ioutil
+            desc: The io/ioutil package has been deprecated, see https://go.dev/doc/go1.16#ioutil
+        allow:
+          - $gostd
+          - golang.org/x/net/http/httpguts
+          - github.com/eser/go-service
+          - go.uber.org/fx
+          - github.com/oklog/ulid/v2
+          - github.com/go-playground/validator/v10
+          - github.com/stretchr/testify
+          - github.com/go-faker/faker/v4
+          - github.com/getkin/kin-openapi/openapi3
+          - github.com/golang-jwt/jwt/v5
+  revive:
+    # enable-all-rules: true
+    ignore-generated-header: true
+    severity: warning
+    rules:
+      - name: var-naming
+        disabled: true
+        arguments: []
+      # - name: exported
+      #   severity: warning
+      # - name: error-return
+      #   severity: warning
+      # - name: error-naming
+      #   severity: warning
+      # - name: if-return
+      #   severity: warning
+      # - name: var-naming
+      #   severity: warning
+      # - name: var-declaration
+      #   severity: warning
+      # - name: receiver-naming
+      #   severity: warning
+      # - name: errorf
+      #   severity: warning
+      # - name: empty-block
+      #   severity: warning
+      # - name: unused-parameter
+      #   severity: warning
+      # - name: unreachable-code
+      #   severity: warning
+      # - name: redefines-builtin-id
+      #   severity: warning
+      # - name: superfluous-else
+      #   severity: warning
+      # - name: unexported-return
+      #   severity: warning
+      # - name: indent-error-flow
+      #   severity: warning
+      # - name: blank-imports
+      #   severity: warning
+      # - name: range
+      #   severity: warning
+      # - name: time-naming
+      #   severity: warning
+      # - name: context-as-argument
+      #   severity: warning
+      # - name: context-keys-type
+      #   severity: warning
+      # - name: indent-error-flow
+      #   severity: warning
+
+issues:
+  fix: true
+  exclude-use-default: false
+  exclude-dirs:
+    - docs
