@@ -55,7 +55,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-         fetch-depth: 2
+          fetch-depth: 2
 
       - name: Setup Go ${{ matrix.go-version }}
         uses: actions/setup-go@v4
@@ -63,9 +63,9 @@ jobs:
           go-version: ${{ matrix.go-version }}
 
       - name: Build
-        working-directory: ./backend/
+        working-directory: .
         run: go build -v ./...
 
       - name: Test
-        working-directory: ./backend/
+        working-directory: .
         run: go test -v ./...

@@ -1,8 +1,6 @@
 # Karma Points Developer Document
 
 <p align="center">
-  <img src="https://acikyazilimagi.com/assets/logo.svg" alt="Karma-Points Logo" width="100" height="100" />
-
   <p align="center">
     <a href="https://discord.com/invite/ckS4huSvEk">
       <img src="https://img.shields.io/badge/Join%20us%20on%20Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Join us on Discord" />
@@ -49,6 +47,7 @@
 ### Installation Instructions
 
 - **Gerekli Ön Koşullar:**
+
   - [Git](https://git-scm.com/) v2.46+
   - [Node.js](https://nodejs.org/) v22.0+
   - [pre-commit](https://pre-commit.com/) v3.6+
@@ -100,11 +99,13 @@ eğer cli ise komut ve parametre açıklamaları
 Katkıda bulunmak isteyenler için adım adım talimatlar:
 
 1. **Proje Fork'lama:**
+
    - GitHub hesabınıza giriş yapın.
    - Karma-Points projesinin GitHub sayfasına gidin.
    - Sağ üst köşedeki "Fork" butonuna tıklayarak projeyi kendi hesabınıza fork'layın.
 
 2. **Bilgisayarınızda Çalışma Ortamı Oluşturma:**
+
    - Forkladığınız projeyi `git` aracıyla kendi bilgisayarınıza indirin.
 
      ```bash
@@ -119,6 +120,7 @@ Katkıda bulunmak isteyenler için adım adım talimatlar:
      ```
 
 3. **Yeni Bir Branch Oluşturma:**
+
    - Yeni bir branch oluşturun ve bu branch'e geçin:
 
      ```bash
@@ -126,6 +128,7 @@ Katkıda bulunmak isteyenler için adım adım talimatlar:
      ```
 
 4. **Değişiklikleri Yapma:**
+
    - Kendi branch'inizde gerekli değişiklikleri yapın.
 
    - Değişikliklerinizi commit edin:
@@ -136,6 +139,7 @@ Katkıda bulunmak isteyenler için adım adım talimatlar:
      ```
 
 5. **Branch'i Push'lama:**
+
    - Değişikliklerinizi uzak depoya gönderin:
 
      ```bash
@@ -152,11 +156,13 @@ Katkıda bulunmak isteyenler için adım adım talimatlar:
 Proje için geçerli olan kodlama standartları ve en iyi uygulamalar:
 
 - **Kodlama Stili:**
+
   - Kod yazarken anlaşılır ve tutarlı bir stil kullanın.
   - Kodunuzun okunabilir olmasına dikkat edin ve açıklayıcı yorumlar ekleyin.
   - Değişken ve fonksiyon isimlendirmelerinde anlamlı ve açıklayıcı isimler kullanın.
 
 - **Linting ve Formatlama:**
+
   - Projede kullanılan linter araçlarını kullanarak kodunuzu kontrol edin.
   - Kod formatlama kurallarına uyun ve gerekli formatlama araçlarını kullanarak kodunuzu formatlayın.
 
@@ -169,11 +175,13 @@ Proje için geçerli olan kodlama standartları ve en iyi uygulamalar:
 Testlerin nasıl yazılacağı ve doğrulama süreçleri:
 
 - **Test Yazma:**
+
   - Proje için belirlenen test çerçevesini kullanarak testlerinizi yazın (örneğin, Jest, Mocha).
   - Birim testleri ve entegrasyon testleri yazarak kodunuzun doğruluğunu kontrol edin.
   - Test kapsamını artırmak için her yeni özellik veya değişiklik için test yazmayı ihmal etmeyin.
 
 - **Test Çalıştırma:**
+
   - Testleri çalıştırmak için proje kök dizininde aşağıdaki komutu kullanın:
 
     ```bash
