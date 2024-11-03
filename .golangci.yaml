@@ -34,6 +34,7 @@ linters-settings:
           - github.com/go-faker/faker/v4
           - github.com/getkin/kin-openapi/openapi3
           - github.com/golang-jwt/jwt/v5
+          - golang.org/x/crypto/bcrypt
   revive:
     # enable-all-rules: true
     ignore-generated-header: true
