@@ -8,6 +8,7 @@ require (
 	github.com/oklog/ulid/v2 v2.1.0
 	github.com/stretchr/testify v1.9.0
 	go.uber.org/fx v1.22.2
+	golang.org/x/crypto v0.26.0
 	golang.org/x/net v0.28.0
 )
 

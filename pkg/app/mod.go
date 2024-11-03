@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/eser/go-service/pkg/app/config"
+	"github.com/eser/go-service/pkg/app/routes/auth"
 	"github.com/eser/go-service/pkg/app/routes/home"
 	"github.com/eser/go-service/pkg/app/routes/protected"
 	"github.com/eser/go-service/pkg/bliss"
@@ -21,6 +22,7 @@ var FxModule = fx.Module( //nolint:gochecknoglobals
 		RegisterMiddlewares,
 		home.IndexRoutes,
 		protected.IndexRoutes,
+		auth.IndexRoutes,
 	),
 	fx.Provide(
 		bliss.LoadConfig[config.AppConfig](LoadConfig),
